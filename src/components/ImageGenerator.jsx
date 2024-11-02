@@ -36,9 +36,9 @@ const ImageGenerator = () => {
         <>
             <div className=" flex items-center justify-center flex-col bg-zinc-800 p-11">
                 <div className=" text-6xl text-white font-bold p-2"> AI Image <span className=' text-pink-600'>Generator </span></div>
-                <p className='text-xl text-white font-bold p-3'>Convert your text to image using AI Image Generator. This App will Generate a Image based on your input</p>
+                <p className='text-xl text-white font-bold p-3'>Convert your text to image using AI Image Generator. This App will Generate a Image based on your input once you add your API key</p>
                 <div className=' flex gap-2' >
-                    <input className='w-[500px] rounded-full p-3' type="text" ref={inputRef} placeholder='enter prompt here' />
+                    <input className='w-[500px] rounded-full p-3' type="text" ref={inputRef} placeholder='Enter prompt here' />
                     <input className=' rounded-full p-3' type="text" placeholder='Enter your API Key' value={key} onChange={
                         (e) => {
                             setKey(e.target.value);
